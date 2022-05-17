@@ -4,10 +4,12 @@ b = int(input())
 c = int(input())
 print(a + b + c)
 
+
 #Area of right-angled triangle
 a = int(input())
 b = int(input())
 print(a * b / 2)
+
 
 #Apple sharing
 n = int(input())
@@ -15,27 +17,28 @@ k = int(input())
 print(k // n)
 print(k % n)
 
+
 #Digital clock
 n = int(input())
 hours = n // 60
 minutes = n % 60
 print(hours, minutes)
 
+
 #Hello, Harry!
 print('Hello, ' + input() + '!')
-
 Previous and next
-
 n = int(input())
-
 print('The next number for the number ' + str(n) + ' is ' + str(n + 1) + '.')
 print('The previous number for the number ' + str(n) + ' is ' + str(n - 1) + '.')
+
 
 #School desks
 a = int(input())
 b = int(input())
 c = int(input())
 print(a // 2 + b // 2 + c // 2 + a % 2 + b % 2 + c % 2)
+
 
 #Minimum of two numbers
 a=int(input())
@@ -45,6 +48,7 @@ if a<b:
 else:
     print(b)
 
+    
 #Sign function
 x = int(input())
 if x > 0:
@@ -54,6 +58,7 @@ elif x == 0:
 else:
     print(-1)
 
+    
 #Minimum of three numbers
 a = int(input())
 b = int(input())
@@ -65,6 +70,7 @@ elif a >= b <= c:
 else:
     print(c)
 
+    
 #Leap year
 year = int(input())
 if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
@@ -72,6 +78,7 @@ if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
 else:
     print('COMMON')
 
+    
 #Equal numbers
 a = int(input())
 b = int(input())
@@ -83,6 +90,7 @@ elif a == b or b == c or a == c:
 else:
     print(0)
 
+    
 #Rook move
 x1 = int(input())
 y1 = int(input())
@@ -92,6 +100,7 @@ y2 = int(input())if x1 == x2 or y1 == y2:
 else:
     print('NO')
 
+    
 #Chess board
 x1 = int(input())
 y1 = int(input())
@@ -102,6 +111,7 @@ if (x1 + y1 + x2 + y2) % 2 == 0:
 else:
     print('NO')
 
+    
 #King move
 x1 = int(input())
 y1 = int(input())
@@ -112,6 +122,7 @@ if abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1:
 else:
     print('NO')
 
+    
 #Bishop moves
 x1 = int(input())
 y1 = int(input())
@@ -122,6 +133,7 @@ if abs(x1 - x2) == abs(y1 - y2):
 else:
     print('NO')
 
+    
 #Queen move
 x1 = int(input())
 y1 = int(input())
@@ -132,6 +144,7 @@ if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
 else:
     print('NO')
 
+    
 #Knight move
 x1 = int(input())
 y1 = int(input())
@@ -144,6 +157,7 @@ if dx == 1 and dy == 2 or dx == 2 and dy == 1:
 else:
     print('NO')
 
+    
 #Chocolate bar
 n = int(input())
 m = int(input())
@@ -153,44 +167,40 @@ if k < n * m and ((k % n == 0) or (k % m == 0)):
 else:
     print('NO')
 
+    
 #Section 3
 Last digit of integer
-
 a = int(input())
-
 print(a % 10)
+
 
 #Fractional part
 x = float(input())
-
 print(x - int(x))
 
+
 #First digit after decimal point
-
 x = float(input())
-
 print(int(x * 10) % 10)
 
+
 #Car route
-
 from math import ceil 
-
 n = int(input())
 m = int(input())
 print(ceil(m / n))
-
 Total cost
-
 a = int(input())
 b = int(input())
 n = int(input())
 cost = n * (100 * a + b)
 print(cost // 100, cost % 100)
 
+
 #Tens digit
 n = int(input())
-
 print(n // 10 % 10)
+
 
 #Sum of digits
 n = int(input())
@@ -199,23 +209,27 @@ b = n // 10 % 10
 c = n % 10
 print(a + b + c)
 
+
 #Clock face – 1
 h = int(input())
 m = int(input())
 s = int(input()) 
 print(h * 30 + m * 30 / 60 + s * 30 / 3600)
 
+
 #Clock face – 2
 alpha = float(input())
 print(alpha % 30 * 12)
-
 Section 4
+
+
 #Series – 1
 a = int(input())
 b = int(input())
 for i in range(a, b + 1):
     print(i)
 
+    
 #Series – 2
 a = int(input())
 b = int(input())
@@ -226,11 +240,13 @@ else:
     for i in range(a, b - 1, -1):
         print(i)
 
+        
 #Sum of ten numbers
 res = 0
 for i in range(10):
     res += int(input())
 print(res)
+
 
 #Sum of N numbers
 n = int(input())
@@ -239,11 +255,13 @@ for i in range(n):
     res += int(input())
 print(res)
 
+
 #Sum of cubes
 res = 0
 for i in range(1, int(input()) + 1):
     res += i ** 3
 print(res)
+
 
 #Factorial
 res = 1
@@ -252,12 +270,14 @@ for i in range(1, n + 1):
     res *= i
 print(res)
 
+
 #The number of zeros
 num_zeroes = 0
 for i in range(int(input())):
     if int(input()) == 0:
         num_zeroes += 1
 print(num_zeroes)
+
 
 #Adding factorials
 n = int(input())
@@ -267,6 +287,7 @@ for i in range(1, n + 1):
     partial_factorial *= i
     partial_sum += partial_factorial
 print(partial_sum)
+
 
 #Lost card
 n = int(input())
@@ -280,6 +301,7 @@ for i in range(n - 1):
     sum_cards -= int(input())
 print(sum_cards)
 
+
 #Ladder
 n = int(input())
 for i in range(1, n + 1):
@@ -287,6 +309,7 @@ for i in range(1, n + 1):
         print(j, sep='', end='')
     print()
 
+    
 #Slices
 s = input()
 print(s[2])
@@ -299,19 +322,22 @@ print(s[::-1])
 print(s[::-2])
 print(len(s))
 
+
 #The number of words
 print(input().count(' ') + 1)
 
+
 #The two halves
 s = input()
-
 print(s[(len(s) + 1) // 2:] + s[:(len(s) + 1) // 2])
+
 
 #To swap the two words
 s = input()
 first_word = s[:s.find(' ')]
 second_word = s[s.find(' ') + 1:]
 print(second_word + ' ' + first_word)
+
 
 #The first and last occurrence
 s = input()
@@ -320,6 +346,7 @@ if s.count('f') == 1:
 elif s.count('f') >= 2:
     print(s.find('f'), s.rfind('f'))
 
+    
 #The second occurrence
 s = input()
 if s.count('f') == 1:
@@ -329,10 +356,12 @@ elif s.count('f') < 1:
 else:
     print(s.find('f', s.find('f') + 1))
 
+    
 #Remove the fragment
 s = input()
 s = s[:s.find('h')] + s[s.rfind('h') + 1:]
 print(s)
+
 
 #Reverse the fragment
 s = input()
@@ -342,11 +371,14 @@ c = s[s.rfind('h') + 1:]
 s = a + b[::-1] + c
 print(s)
 
+
 #Replace the substring
 print(input().replace('1', 'one'))
 
+
 #Delete a character
 print(input().replace('@', ''))
+
 
 #Replace within the fragment
 s = input()
@@ -356,6 +388,7 @@ c = s[s.rfind('h'):]
 s = a + b.replace('h', 'H') + c
 print(s)
 
+
 #Delete every third character
 s = input()
 t = ''
@@ -364,6 +397,7 @@ for i in range(len(s)):
         t = t + s[i]
 print(t)
 
+
 #List of squares
 n = int(input())
 i = 1
@@ -371,12 +405,14 @@ while i ** 2 <= n:
     print(i ** 2)
     i += 1
 
+    
 #Least divisor
 n = int(input())
 i = 2
 while n % i != 0:
     i += 1
 print(i)
+
 
 #The power of two
 n = int(input())
@@ -387,6 +423,7 @@ while two_in_power <= n:
     power += 1
 print(power - 1, two_in_power // 2)
 
+
 #Morning jog
 x = int(input())
 y = int(input())
@@ -396,11 +433,13 @@ while x < y:
     i += 1
 print(i)
 
+
 #The length of the sequence
 len = 0
 while int(input()) != 0:
     len += 1
 print(len)
+
 
 #The sum of the sequence
 sum = 0
@@ -409,6 +448,7 @@ while element != 0:
     sum += element
     element = int(input())
 print(sum)
+
 
 #The average of the sequence
 sum = 0
@@ -420,6 +460,7 @@ while element != 0:
     element = int(input())
 print(sum / len)
 
+
 #The maximum of the sequence
 max = 0
 element = -1
@@ -428,6 +469,7 @@ while element != 0:
     if element > max:
         max = element
 print(max)
+
 
 #The index of the maximum of a sequence
 max = 0
@@ -442,6 +484,7 @@ while element != 0:
     len += 1
 print(index_of_max)
 
+
 #The number of even elements of the sequence
 num_even = -1
 element = -1
@@ -450,6 +493,7 @@ while element != 0:
     if element % 2 == 0:
         num_even += 1
 print(num_even)
+
 
 #The number of elements that are greater than the previous one
 prev = int(input())
@@ -460,6 +504,7 @@ while prev != 0:
         answer += 1
     prev = next
 print(answer)
+
 
 #The second maximum
 first_max = int(input())
@@ -475,6 +520,7 @@ while element != 0:
     element = int(input())
 print(second_max)
 
+
 #The number of elements equal to the maximum
 maximum = 0
 num_maximal = 0
@@ -487,6 +533,7 @@ while element != 0:
         num_maximal += 1       
 print(num_maximal)
 
+
 #Fibonacci numbers
 n = int(input())
 if n == 0:
@@ -497,6 +544,7 @@ else:
         a, b = b, a + b
     print(b)
 
+    
 #The index of a Fibonacci number
 a = int(input())
 if a == 0:
@@ -513,6 +561,7 @@ else:
     else:
         print(-1)
 
+        
 #The maximum number of consecutive equal elements
 prev = -1
 curr_rep_len = 0
@@ -529,23 +578,27 @@ while element != 0:
 max_rep_len = max(max_rep_len, curr_rep_len)
 print(max_rep_len)
 
+
 #Even indices
 a = input().split()
 for i in range(0, len(a), 2):    
     print(a[i])
 
+    
 #Even elements
 a = [int(i) for i in input().split()]
 for elem in a:
     if elem % 2 == 0:
         print(elem)
 
+        
 #Greater than the previous
 a = [int(i) for i in input().split()]
 for i in range(1, len(a)):
     if a[i] > a[i - 1]:        
         print(a[i])
 
+        
 #Neighbours of the same sign
 a = [int(i) for i in input().split()]
 for i in range(1, len(a)):
@@ -553,6 +606,7 @@ for i in range(1, len(a)):
         print(a[i - 1], a[i])
         break
 
+        
 #Greater than neighbours
 a = [int(i) for i in input().split()]
 counter = 0
@@ -560,6 +614,7 @@ for i in range(1, len(a) - 1):
     if a[i - 1] < a[i] > a[i + 1]:
         counter += 1
 print(counter)
+
 
 #The largest element
 index_of_max = 0
@@ -569,6 +624,7 @@ for i in range(1, len(a)):
         index_of_max = i
 print(a[index_of_max], index_of_max)
 
+
 #The number of distinct elements
 a = [int(i) for i in input().split()]
 num_distinct = 1
@@ -577,14 +633,13 @@ for i in range(0, len(a) - 1):
         num_distinct += 1
 print(num_distinct)
 
+
 #Swap neighbours
 a = [int(i) for i in input().split()]
 for i in range(1, len(a), 2):
     a[i - 1], a[i] = a[i], a[i - 1]
 print(' '.join([str(i) for i in a]))
-
 Swap min and max
-
 a = [int(s) for s in input().split()]
 index_of_min = 0
 index_of_max = 0
@@ -596,6 +651,7 @@ for i in range(1, len(a)):
 a[index_of_min], a[index_of_max] = a[index_of_max], a[index_of_min]
 print(' '.join([str(i) for i in a]))
 
+
 #The number of pairs of equal
 a = [int(s) for s in input().split()]
 counter = 0
@@ -604,6 +660,7 @@ for i in range(len(a)):
         if a[i] == a[j]:
             counter += 1
 print(counter)
+
 
 #Unique elements
 a = [int(s) for s in input().split()]
@@ -614,6 +671,7 @@ for i in range(len(a)):
     else:
         print(a[i], end=' ')
 
+        
 #Queens
 n = 8
 x = []
@@ -632,6 +690,7 @@ if correct:
 else:
     print('YES')
 
+    
 #The bowling alley
 n, k = [int(s) for s in input().split()]
 bahn = ['I'] * n
@@ -641,16 +700,17 @@ for i in range(k):
         bahn[j] = '.'
 print(''.join(bahn))
 
+
 #The length of the segment
 from math import sqrt 
 def distance(x1, y1, x2, y2):
     return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2) 
-
 x1 = float(input())
 x2 = float(input())
 y1 float(input())
 y2 = float(input())
 print(distance(x1, x2, y1, y2))
+
 
 #Negative exponent
 def power(a, n):
@@ -661,20 +721,20 @@ def power(a, n):
         return res
     else:
         return 1 / res
-
 print(power(float(input()), int(input())))
+
 
 #Uppercase
 def capitalize(word):    
     first_letter_small = word[0]    
     first_letter_big = chr(ord(first_letter_small) - ord('a') + ord('A'))   
     return first_letter_big + word[1:] 
-
 source = input().split()
 res = []
 for word in source:    
     res.append(capitalize(word))
 print(' '.join(res))
+
 
 #Exponentiation
 def power(a, n):
@@ -682,8 +742,8 @@ def power(a, n):
         return 1
     else:
         return a * power(a, n - 1)
-
 print(power(float(input()), int(input())))
+
 
 #Reverse the sequence
 def reverse():
@@ -691,8 +751,8 @@ def reverse():
     if x != 0:
         reverse()
     print(x)
-
 reverse()
+
 
 #Fibonacci numbers
 def fib(n):
@@ -700,8 +760,8 @@ def fib(n):
         return 1
     else:
         return fib(n - 1) + fib(n - 2)
-
 print(fib(int(input())))
+
 
 #Maximum
 n, m = [int(i) for i in input().split()]
@@ -715,6 +775,7 @@ for i in range(n):
             best_i, best_j = i, j
 print(best_i, best_j)
 
+
 #Snowflake
 n = int(input())
 a = [['.'] * n for i in range(n)]
@@ -726,6 +787,7 @@ for i in range(n):
 for row in a:
     print(' '.join(row))
 
+    
 #Chess board
 n, m = [int(i) for i in input().split()]
 a = []
@@ -739,14 +801,13 @@ for i in range(n):
 for row in a:
     print(' '.join(row))
 
+    
 #The diagonal parallel to the main
 n = int(input())
 a = [[abs(i - j) for j in range(n)] for i in range(n)]
 for row in a:    
     print(' '.join([str(i) for i in row]))
-
 side diagonal
-
 n = int(input())
 a = [[0] * n for i in range(n)]
 for i in range(n):
@@ -759,49 +820,51 @@ for row in a:
         print(elem, end=' ')
     print()
 
+    
 #Swap the columns
 def swap_columns(a, i, j):
     for k in range(len(a)):
         a[k][i], a[k][j] = a[k][j], a[k][i]
-
 n, m = [int(i) for i in input().split()]
 a = [[int(j) for j in input().split()] for i in range(n)]
 i, j = [int(i) for i in input().split()]
 swap_columns(a, i, j)
 print('\n'.join([' '.join([str(i) for i in row]) for row in a]))
 
+
 #Scale a matrix
 m, n = [int(k) for k in input().split()]
 A = [[int(k) for k in input().split()] for i in range(m)]
 c = int(input())
-
 for i in range(m):
     for j in range(n):
         A[i][j] *= c
-
 print('\n'.join([' '.join([str(k) for k in row]) for row in A]))
+
 
 #Multiply two matrices
 m, n, r = [int(k) for k in input().split()]
 A = [[int(k) for k in input().split()] for i in range(m)]
 B = [[int(k) for k in input().split()] for j in range(n)]
 C = [[0]*r for i in range(m)]
-
 for i in range(m):
     for k in range(r):
         for j in range(n):
             C[i][k] += A[i][j] * B[j][k]
-
 print('\n'.join([' '.join([str(k) for k in row]) for row in C]))
+
 
 #The number of distinct numbers
 print(len(set(input().split())))
 
+
 #The number of equal numbers
 print(len(set(input().split()) & set(input().split())))
 
+
 #The intersection of sets
 print(*sorted(set(input().split()) & set(input().split()), key=int))
+
 
 #Has the number been encountered before
 numbers = [int(s) for s in input().split()]
@@ -813,27 +876,28 @@ for num in numbers:
         print('NO')
         occur_before.add(num)
 
+        
 #Cubes
 def print_set(some_set):
     print(len(some_set))
     print(*[str(item) for item in sorted(some_set)])
-
 N, M = [int(s) for s in input().split()]
 A_colors, B_colors = set(), set()
 for i in range(N):
     A_colors.add(int(input()))
 for i in range(M):
     B_colors.add(int(input()))
-
 print_set(A_colors & B_colors)
 print_set(A_colors - B_colors)
 print_set(B_colors - A_colors)
+
 
 #The number of distinct words in some text
 words = set()
 for _ in range(int(input())):
     words.update(input().split())
 print(len(words))
+
 
 #Guess the number
 n = int(input())
@@ -849,8 +913,8 @@ while True:
         possible_nums &= guess
     else:
         possible_nums &= all_nums - guess
-
 print(' '.join([str(x) for x in sorted(possible_nums)]))
+
 
 #Polyglots
 students = [{input() for j in range(int(input()))} for i in range(int(input()))]
@@ -858,12 +922,14 @@ known_by_everyone, known_by_someone = set.intersection(*students), set.union(*st
 print(len(known_by_everyone), *sorted(known_by_everyone), sep='\n')
 print(len(known_by_someone), *sorted(known_by_someone), sep='\n')
 
+
 #Number of occurrences
 counter = {}
 for word in input().split():
     counter[word] = counter.get(word, 0) + 1
     print(counter[word] - 1, end=' ')
 
+    
 #Dictionary of synonyms
 n = int(input())
 d = {}
@@ -873,25 +939,26 @@ for i in range(n):
     d[second] = first
 print(d[input()])
 
+
 #Elections in the USA
 num_votes = {}
 for _ in range(int(input())):
     candidate, votes = input().split()
     num_votes[candidate] = num_votes.get(candidate, 0) + int(votes)
-
 for candidate, votes in sorted(num_votes.items()):
     print(candidate, votes)
 
+    
 #The most frequent word
 counter = {}
 for i in range(int(input())):
     line = input().split()
     for word in line:
         counter[word] = counter.get(word, 0) + 1
-
 max_count = max(counter.values())
 most_frequent = [k for k, v in counter.items() if v == max_count]
 print(min(most_frequent))
+
 
 #Access rights
 OPERATION_PERMISSION = {
@@ -899,12 +966,10 @@ OPERATION_PERMISSION = {
     'write': 'W',
     'execute': 'X',
 }
-
 file_permissions = {}
 for i in range(int(input())):
     file, *permissions = input().split()
     file_permissions[file] = set(permissions)
-
 for i in range(int(input())):
     operation, file = input().split()
     if OPERATION_PERMISSION[operation] in file_permissions[file]:
@@ -912,27 +977,27 @@ for i in range(int(input())):
     else:
         print('Access denied')
 
+        
 #Countries and cities
 motherland = {}
 for i in range(int(input())):
     country, *cities = input().split()
     for city in cities:
         motherland[city] = country
-
 for i in range(int(input())):
     print(motherland[input()])
 
+    
 #Frequency analysis
 from collections import Counter
-
 words = []
 for _ in range(int(input())):
     words.extend(input().split())
-
 counter = Counter(words)
 pairs = [(-pair[1], pair[0]) for pair in counter.most_common()]
 words = [pair[1] for pair in sorted(pairs)]
 print('\n'.join(words))
+
 
 # Problem auch ohne Counter lösen
 # n = int(input())
@@ -955,7 +1020,6 @@ for i in range(int(input())):
     latin_translations = latin_translations_chunk.split(', ')
     for latin_word in latin_translations:
         latin_to_english[latin_word].append(english_word)
-  
 print(len(latin_to_english))
 for latin_word, english_translations in sorted(latin_to_english.items()):
     print(latin_word + ' - ' + ', '.join(english_translations))
